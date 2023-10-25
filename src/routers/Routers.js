@@ -1,7 +1,8 @@
 import  express  from "express";
 import homeController from "../controllers/homeController";
+import userController from "../controllers/userController";
 
-class HomeRoutes{
+class Routers{
 
     constructor(){
         this.route = express.Router();
@@ -10,6 +11,7 @@ class HomeRoutes{
 
     initRoutes(){
         this.route.get("/", homeController.index);
+        this.route.post("/users", userController.store);
     }
 
     getRoutes(){
@@ -18,4 +20,4 @@ class HomeRoutes{
 
 }
 
-export default new HomeRoutes().getRoutes();
+export default new Routers().getRoutes();
