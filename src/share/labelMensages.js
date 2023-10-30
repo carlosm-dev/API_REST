@@ -4,7 +4,10 @@ const labels = Object.freeze({
     'name-is-not-empty'              : 'Name can not be empty.',
     'name-between-3-and-255'         : 'Name must be between 3 and 255 characters.',
     'password-weak'                  : 'The Passwor is too weak.',
-    'email'                          : 'Invalid Email'
+    'email'                          : 'Invalid Email',
+    'user-not-found'                 : 'User not found.',
+    'invalid-user'                   : 'Invalid User.',
+    'user-removed'                   :  'User has been removed.'
 
 });
 

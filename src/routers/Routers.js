@@ -1,5 +1,4 @@
 import  express  from "express";
-import homeController from "../controllers/homeController";
 import userController from "../controllers/userController";
 
 class Routers{
@@ -10,7 +9,10 @@ class Routers{
     }
 
     initRoutes(){
-        this.route.get("/", homeController.index);
+        this.route.get("/users", userController.index);
+        this.route.get("/users/:id", userController.show);
+        this.route.put("/users/:id", userController.update);
+        this.route.delete("/users/:id", userController.delete);
         this.route.post("/users", userController.store);
     }
 
