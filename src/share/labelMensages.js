@@ -7,7 +7,8 @@ const labels = Object.freeze({
     'email'                          : 'Invalid Email',
     'user-not-found'                 : 'User not found.',
     'invalid-user'                   : 'Invalid User.',
-    'user-removed'                   :  'User has been removed.'
+    'user-removed'                   : 'User has been removed.',
+    'invalid-email-or-password'      : 'Invalid Email or Password!'
 
 });
 
